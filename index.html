@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="data.json"></script>
+  <title>momentum</title>
+</head>
+<body class="body-bg">
+  <div class="to-do_list">
+    <div class="container">
+      <span class="to-do_span">What should we do today?</span>
+      <button type="button" class="exit">x</button>
+      <div class="to-do_container">
+        <input type="text" class="to-do_item" placeholder="Enter task"></input>
+        <input type="text" class="to-do_item" placeholder="Enter task"></input>
+        <input type="text" class="to-do_item" placeholder="Enter task"></input>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="Enter your city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon" ></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="Dear Guest" />
+    </div>
+    <span class="to-do_title">What should we do today?</span>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="contacts">
+      <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="90"></a>
+      <p>@ 2022</p>
+      <a href="https://github.com/ananummy" class="gh-link">GitHub</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
