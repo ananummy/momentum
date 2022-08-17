@@ -215,31 +215,9 @@ const prevAudio = document.querySelector('.play-prev')
 const nextAudio = document.querySelector('.play-next')
 const playButton = document.querySelector('.play')
 const playListContainer = document.querySelector('.play-list')
-const playList = [
-    {   
-        title: 'Aqua Caelestis',
-        src: '../assets/sounds/Aqua Caelestis.mp3',
-        duration: '00:58'
-    },  
+let playNum = 0
+import playList from "./playList.js"
 
-    {      
-        title: 'River Flows In You',
-        src: '../assets/sounds/River Flows In You.mp3',
-        duration: '03:50'
-    },
-
-    {      
-        title: 'Summer Wind',
-        src: '../assets/sounds/Summer Wind.mp3',
-        duration: '05:05'
-    },
-    
-    {      
-        title: 'Ennio Morricone',
-        src: '../assets/sounds/Ennio Morricone.mp3',
-        duration: '05:03'
-    }
-]
 
 for (let i = 0; i < playList.length; i++) {
     const li = document.createElement('li')
@@ -276,8 +254,6 @@ function toggleBtn() {
 playButton.addEventListener('click', toggleBtn)
 playButton.addEventListener('click', playAudio)
 
-
-let playNum = 0
 
 function playPrev() {
     if (playNum === 0) {
